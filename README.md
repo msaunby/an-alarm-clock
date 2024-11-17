@@ -29,7 +29,7 @@ I'm going to make the assumption that everyone knows what an alarm clock is, whi
 
 ### Origins of the alarm clock
 
-I'm guessing you haven't given much thought to how alarm clocks came about, or what the internal components of an alarm clock might be.
+I'm guessing you haven't given much thought to how alarm clocks came about, or what the internal components of a traditional alarm clock might be.
 
 The alarm clock is a product of the industrial revolution, both for the need for workers to wake at a fixed time, and also the technology to make an affordable time keeping device.
 
