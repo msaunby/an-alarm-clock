@@ -9,7 +9,7 @@ The material here, including software to implement an alarm clock, shows how sof
 
 ## Purpose of the alarm clock project
 
-There are plenty of perfectly good alarm clocks, the world doesn't need any more. 
+There are plenty of perfectly good alarm clocks, the world probably doesn't need any new designs. However, the concept of the alarm clock is a useful design exercise.
 
 ### Hello, world!
 
@@ -31,36 +31,46 @@ I'm going to make the assumption that everyone knows what an alarm clock is, whi
 
 I'm guessing you haven't given much thought to how alarm clocks came about, or what the internal components of a traditional alarm clock might be.
 
-The alarm clock is a product of the industrial revolution, both for the need for workers to wake at a fixed time, and also the technology to make an affordable time keeping device.
+The alarm clock is a product of the industrial revolution, both for the need for workers to wake in time to get to work, and also for the technology to mass produce time keeping devices.
 
 Traditional clockwork alarm clocks were not particularly good timekeeping devices, and would be set each night, often by checking with a wristwatch, and wound.
 
-The clockwork motor powers both the clock mechanism and the alarm bell. Typically the act of winding would also activate the alarm mechanism.
+The clockwork motor powers both the clock mechanism and the alarm bell. Typically the act of winding also activates the alarm mechanism.
 
-When the actual time reached the alarm time the bell would ring until the clockwork spring was fully unwound, or more usually then button on the top of the clock was pressed.
+When the actual time reaches the alarm time the bell rings until the clockwork spring is fully unwound, or more usually until button on the top of the clock is pressed.
 
 ### The traditional user interface
 
-![Front](alarmclock-front.jpg)
-
-![Rear](alarmclock-rear.jpg)
+<img src="alarmclock-front.jpg" width="45%"/>
+<img src="alarmclock-rear.jpg" width="45%"/>
 
 ### Digital alarm clocks
 
-Today most alarm clocks are either electronic, digital, clocks, or a smartphone app. Even if the intention were not to emulate a traditional alarm clock, the components or sub-systems of such a device are going to be quite familiar.
+Today most alarm clocks are either electronic digital clocks, or a smartphone app. Even if the intention were not to emulate a traditional alarm clock, the components or sub-systems of such a device are going to be quite familiar.
 
 * Power source
 
-* Time keeping
-
 * Time setting
+
+* Time keeping
 
 * Alarm time setting
 
-* Activate alarm
+* Enable alarm
 
-* De-activate alarm
+* Silence alarm
 
-There is one further feature, but it is hidden from the user - check if current time is the alarm time.
+There is one further feature, but it is hidden from the user - check if current time is the alarm time, then activate the alarm.
 
+### The hardware
 
+Almost any MCU can do this job - Arduino, Micro:bit...
+
+<img src="ESP8266-OLED.png" width="50%"><img src="esphome.png" width="40%">
+
+<hr>
+
+<img src="homeassistant-alarmclock.png" width="45%"/>
+<img src="alarmclock-rear.jpg" width="45%"/>
+
+![Alarm clock dark mode](alarmclock-dark.jpg)
