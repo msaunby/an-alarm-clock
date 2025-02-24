@@ -1,4 +1,4 @@
-# an-alarm-clock
+# Hello, IoT, world!
 An Alarm Clock
 
 ## Overview
