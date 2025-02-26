@@ -9,19 +9,40 @@ The material here, including software to implement an alarm clock, shows how sof
 
 ## Purpose of the alarm clock project
 
-There are plenty of perfectly good alarm clocks, the world probably doesn't need any new designs. However, the concept of the alarm clock is a useful design exercise.
+There are plenty of perfectly good alarm clocks, the world probably doesn't need any new designs. However, the concept of the alarm clock is a useful software design exercise.
+
+But first, a quick aside.
 
 ### Hello, world!
 
-Most programmers are familiar with the Hello World program, if you are not, see <https://en.wikipedia.org/wiki/%22Hello,_World!%22_program>. Programmers working with embedded devices, typically microcontrollers, are often required to work with systems that have no operating system, and in many cases no text output, so printing "Hello, World" is not an option.
+Most programmers are familiar with the Hello World program, if you are not, take a look aSt Wikipedia <https://en.wikipedia.org/wiki/%22Hello,_World!%22_program>. 
+
+Here's the Python hello world.
+
+```python
+print("Hello, world!")
+```
+
+This doesn't test your programming ability in the slightest, but it is an effective test of -
+
+* target hardware - can it run a program and display output?
+* compiler/interpreter tool chain - is the software required to edit, save, build and run a program installed and configured?  
 
 ### Blink!
 
-When communicating with words is not an option we can always blink. So embedded programmers typically write a "blink" program that causes an light to flash.
+Programmers working with embedded devices, for example wifi enabled motion switches and light-bulbs,  are often required to work with systems that have no operating system, and in many cases no text output, so printing "Hello, World" is not an option. Instead, they typically write a "blink" program that causes an LED to flash.
 
-As with "Hello, World" a "Blink" program is useful to ensure that your "toolchain" is working correctly. That is, you are able to build and run software on a device.  However, it's so far from a real world problem that it doesn't test you, the programmer.
+As with "Hello, World" a "Blink" program is useful to ensure that your "toolchain" is working correctly. That is, you are able to build and run software on a device.  However, it's so far from a real world problem that it doesn't test you, the programmer, or essential features such as wifi connectivity.
 
-For decades the project I use to check that I can design a useful device is an alarm clock, even the most basic of micro-controllers can run an alarm clock program. This is what I would like to share with you.
+### What happens next?
+
+Once you have determined that your device can "blink", you could -
+
+* Build the 'thing' - maybe you know what you want to build.
+
+* Build an example project - perhaps to test a feature of your device, a camera, temperature sensor, etc.
+
+For decades the project I use to check that I can design and build a useful device is an alarm clock or similar, even the most basic of micro-controllers can run an alarm clock or kitchen timer program.
 
 ## What is an alarm clock?
 
